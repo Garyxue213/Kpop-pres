@@ -446,8 +446,7 @@ function renderLineView(lineKey, autoplay) {
 
   state.activeLineKey = lineKey;
 
-  const titleSuffix = lineKey === state.primaryResultKey ? `(${state.mbtiType})` : `(Preview for ${state.mbtiType})`;
-  ui.resultTitle.textContent = `${result.name} ${titleSuffix}`;
+  ui.resultTitle.textContent = result.name;
   ui.resultTagline.textContent = result.tagline;
   ui.resultDescription.textContent = result.description;
 
